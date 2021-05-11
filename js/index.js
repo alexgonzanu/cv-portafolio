@@ -1,7 +1,8 @@
-import crearCabecera from "./componentes/aboutMe.js";
+import crearNavegador from "./componentes/Navegador.js";
 
+const base = document.querySelector(".base");
 const crearComponentesPortafolio = () => {
-  crearCabecera();
+  crearNavegador(base);
 };
 
 crearComponentesPortafolio();
