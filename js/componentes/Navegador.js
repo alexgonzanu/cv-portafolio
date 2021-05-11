@@ -26,8 +26,9 @@ const crearItemsNavegador = (navegador) => {
         icono.classList.add("fa-briefcase");
         break;
       case "CONTACTO":
-      default:
         icono.classList.add("fa-envelope-open");
+        break;
+      default:
         break;
     }
     item.appendChild(icono);
