@@ -8,7 +8,7 @@ const crearNavegador = (base) => {
 };
 
 const crearItemsNavegador = (navegador) => {
-  const apartados = ["INICIO", "SOBRE MI", "PORTAFOLIO", "CONTACTO"];
+  const apartados = ["INICIO", "SOBRE_MI", "PORTAFOLIO", "CONTACTO"];
   for (const apartado of apartados) {
     const item = document.createElement("button");
     item.textContent = apartado;
@@ -19,7 +19,7 @@ const crearItemsNavegador = (navegador) => {
       case "INICIO":
         icono.classList.add("fa-home");
         break;
-      case "SOBRE MI":
+      case "SOBRE_MI":
         icono.classList.add("fa-user");
         break;
       case "PORTAFOLIO":

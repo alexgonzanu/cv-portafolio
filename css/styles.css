@@ -15,3 +15,12 @@
   opacity: 1;
 }
 
+.sectionHomeCSS {
+  top: 100px;
+}
+
+.fotoHomeCSS {
+  height: calc(100vh - 200px);
+  border-radius: 38px;
+}
+
