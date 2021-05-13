@@ -11,27 +11,17 @@ const limpiarPagina = () => {
   crearComponentesPortafolio();
 };
 
-document.body.addEventListener("click", e => {
-  switch (e.target.innerText) {
-    case "INICIO":
-      limpiarPagina();
-      crearPaginaHome();
-      break;
-    case "SOBRE_MI":
-      limpiarPagina();
-      console.log("Aqui va a ir los componentes de ABOUT");
-      break;
-    case "PORTAFOLIO":
-      limpiarPagina();
-      console.log("Aqui va a ir los componentes de PORTAFOLIO");
-      break;
-    case "CONTACTO":
-      limpiarPagina();
-      console.log("Aqui va a ir los componentes de CONTACT");
-      break;
-    default:
-      break;
-  }
-});
-
 crearComponentesPortafolio();
+crearPaginaHome();
+
+const home = document.querySelector(".home");
+const about = document.querySelector(".about");
+const portfolio = document.querySelector(".portfolio");
+const contact = document.querySelector(".contact");
+
+/*home.addEventListener("mouseover", e => {
+  e.target.style.background = "orange";
+})
+home.addEventListener("mouseout", e => {
+  e.target.style.background = "red";
+})*/

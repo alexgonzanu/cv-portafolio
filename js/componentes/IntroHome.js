@@ -1,7 +1,6 @@
 const crearIntroHome = () => {
   const sectionIntro = document.createElement("section");
   sectionIntro.classList.add("sectionHomeCSS");
-  sectionIntro.classList.add("col-6");
   sectionIntro.appendChild(crearH1());
   sectionIntro.appendChild(crearDescription());
   return sectionIntro;
@@ -9,8 +8,7 @@ const crearIntroHome = () => {
 
 const crearH1 = () => {
   const h1Intro = document.createElement("h1");
-  h1Intro.innerHTML = `- Soy Alejandro González.<br/>FullStack Developer`;
-  /*h1Intro.classList.add("");*/
+  h1Intro.innerHTML = (`Soy Alejandro González.<br/>FullStack Developer`).toUpperCase();
   return h1Intro;
 }
 

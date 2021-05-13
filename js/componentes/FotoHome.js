@@ -2,7 +2,6 @@
 const crearSectionFoto = () => {
   const sectionFoto = document.createElement("section");
   sectionFoto.classList.add("sectionHomeCSS");
-  sectionFoto.classList.add("col-4");
   sectionFoto.appendChild(crearFoto());
   return sectionFoto;
 };
